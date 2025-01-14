@@ -1,0 +1,398 @@
+/* Variables y estilos generales */
+:root {
+    --primary-color: #2A7AE4;
+    --text-color: #464646;
+    --background-light: #F5F5F5;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header y Navegación */
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8%;
+    background: var(--white);
+    border: solid 1px rgb(0, 0, 0);
+    max-height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.cabecera__logo {
+    margin-right: 1rem;
+    height: 30px;
+}
+
+.logo-titulo{
+    display: flex;
+    align-items: center;
+}
+
+.cabecera__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.navegacion {
+    display: flex;
+    gap: 2.7rem;
+    list-style: none;
+    max-height: 100px;
+    /* border: solid 1px rgb(0, 0, 0); */
+
+}
+
+.navegacion__lista {
+    display: inline-flex;
+    list-style: none;
+    gap: 2.7rem;
+    /* margin-left: auto; */
+    max-height: fit-content;
+    /* border: solid 1px rgb(0, 0, 0); */
+}
+
+.navegacion {
+    margin-left: auto;
+}
+
+.navegacion__elemento a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+/* 
+.contacto a {
+    font-weight: 700;
+} */
+
+/* Sección Presentación */
+.presentacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 8%;
+    background: var(--background-light);
+    margin-top: 100px;
+}
+
+.presentacion__foto {
+    width: 368px;
+    height: 368px;
+    border-radius: 50%;
+    object-fit: cover;
+    order: 2;
+}
+
+.presentacion__contenedor {
+    max-width: 60%;
+}
+
+.presentacion__titulo {
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.presentacion__subtitulo {
+    font-size: 1.375rem;
+    margin-bottom: 1.5rem;
+}
+
+.redes {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.redes__img a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Sección Sobre Mí */
+.sobre-mi {
+    padding: 4rem 8%;
+    background: var(--white);
+    width: 100%;
+    border: solid 1px rgb(0, 0, 0);
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+
+}
+
+.sobre-mi__titulo {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.sobre-mi__texto {
+    margin: 0 auto 1rem auto;
+    max-width: 75ch;
+    text-align: center;
+    display: block;
+}
+
+.sobre-mi__firma {
+    margin-top: 1.5rem;
+    width: 120px;
+}
+
+/* Secciones Skills y Hobbies */
+.habilidades, .aficiones {
+    padding: 4rem 8%;
+    background: var(--background-light);
+}
+
+.habilidades__titulo, .aficiones__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.habilidades__lista, .aficiones__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.habilidades__elemento, .aficiones__elemento {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    min-height: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.habilidades__icono, .aficiones__icono {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.5rem;
+}
+
+/* Sección Formación */
+.formacion {
+    padding: 4rem 8%;
+    background: var(--background-light);
+}
+
+.formacion__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formacion__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    list-style: none;
+}
+
+.formacion__elemento {
+    text-align: center;
+}
+
+.contenedorImg {
+    background: var(--white);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+}
+
+.formacion__icono {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sección Proyectos */
+
+
+.proyectos {
+    margin: 0 auto;
+    width: 70%;
+    padding: 4rem 8%;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.proyectos__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.proyectos__contenedor {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: var(--background-light);
+    border-radius: 0.5rem;
+}
+
+/* Sección Contacto */
+
+.contenedor-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 4rem 8%;
+    background: var(--background-light);
+    border: solid 1px rgb(0, 0, 0);
+    width: 100%;
+}
+
+.contacto {
+    padding: 4rem ;
+    background: var(--background-light);
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+.contacto__titulo {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contacto__formulario {
+    width: 100%;
+    max-width: 700px;
+}
+
+.contacto__campo {
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.contacto__campo--textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.contacto__boton {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contacto__boton:hover {
+    background-color: #1B5BB5;
+}
+
+/* Footer */
+.pie {
+    text-align: center;
+    padding: 2rem;
+    background: var(--white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navegacion__lista {
+        display: none;
+    }
+    
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .presentacion__foto {
+        order: 1;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .presentacion__contenedor {
+        order: 2;
+        max-width: 100%;
+    }
+    
+    .presentacion__titulo {
+        font-size: 2rem;
+    }
+    
+    .redes {
+        justify-content: center;
+    }
+    
+    .habilidades__lista, 
+    .aficiones__lista,
+    .formacion__lista {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecera {
+        padding: 1rem 5%;
+    }
+    
+    .presentacion,
+    .sobre-mi,
+    .habilidades,
+    .aficiones,
+    .formacion,
+    .proyectos,
+    .contacto {
+        padding: 2rem 5%;
+    }
+    
+    .presentacion__titulo {
+        font-size: 1.5rem;
+    }
+    
+    .presentacion__subtitulo {
+        font-size: 1rem;
+    }
+    
+    .redes {
+        flex-wrap: wrap;
+    }
+}
